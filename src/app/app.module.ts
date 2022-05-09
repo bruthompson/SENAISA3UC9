@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { ContatoComponent } from './views/contato/contato.component';
 import { JogadorComponent } from './views/jogador/jogador.component';
 import { HomeComponent } from './views/home/home.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContatoComponent,
     JogadorComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

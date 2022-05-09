@@ -75,12 +75,12 @@
 
             <div class="destaques">
                 <div class="quadro-produto">
-                    <div class="produto">
-                        <img src="img/CONTROLE.png" alt="Controle Gamer">
+                    <div *ngFor="let produtos of listaProdutos" class="produto">
+                        <img [src]=produtos.imagem alt="Controle Gamer">
                         <a href="">
-                            <h3>Controle Sem Fio PS5</h3>
+                            <h3>{{produtos.titulo}}</h3>
                         </a>
-                        <p><b>R$395,91</b> <small>12x R$32,99 SEM JUROS</small></p>
+                        <p>{{produtos.descricao}}</p>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="quadro-produto ">
-                    <div class="produto ">
+                    <div class="produto">
                         <img src="img/NOTEBOOK.png " alt="Notebook Gamer ">
                         <a href="">
                             <h3>Notebook Gamer Acer</h3>

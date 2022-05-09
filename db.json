@@ -1,0 +1,45 @@
+{
+    "produtos": [{
+            "id": 1,
+            "imagem": "assets/img/controle.png",
+            "titulo": "Título do produto",
+            "descricao": "Descrição do produto"
+        },
+        {
+            "id": 2,
+            "imagem": "assets/img/headset.png",
+            "titulo": "Título do produto",
+            "descricao": "Descrição do produto"
+        },
+        {
+            "id": 3,
+            "imagem": "assets/img/notebook.png",
+            "titulo": "Título do produto",
+            "descricao": "Descrição do produto"
+        },
+        {
+            "id": 4,
+            "imagem": "",
+            "titulo": "Título do produto",
+            "descricao": "Descrição do produto"
+        },
+        {
+            "id": 5,
+            "imagem": "",
+            "titulo": "Título do produto",
+            "descricao": "Descrição do produto"
+        },
+        {
+            "id": 6,
+            "imagem": "",
+            "titulo": "Título do produto",
+            "descricao": "Descrição do produto"
+        },
+        {
+            "imagem": "",
+            "titulo": "Título do produto",
+            "descricao": "Descrição do produto",
+            "id": 7
+        }
+    ]
+}

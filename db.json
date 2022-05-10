@@ -1,45 +1,66 @@
 {
-    "produtos": [{
-            "id": 1,
-            "imagem": "assets/img/controle.png",
-            "titulo": "Título do produto",
-            "descricao": "Descrição do produto"
-        },
-        {
-            "id": 2,
-            "imagem": "assets/img/headset.png",
-            "titulo": "Título do produto",
-            "descricao": "Descrição do produto"
-        },
-        {
-            "id": 3,
-            "imagem": "assets/img/notebook.png",
-            "titulo": "Título do produto",
-            "descricao": "Descrição do produto"
-        },
-        {
-            "id": 4,
-            "imagem": "",
-            "titulo": "Título do produto",
-            "descricao": "Descrição do produto"
-        },
-        {
-            "id": 5,
-            "imagem": "",
-            "titulo": "Título do produto",
-            "descricao": "Descrição do produto"
-        },
-        {
-            "id": 6,
-            "imagem": "",
-            "titulo": "Título do produto",
-            "descricao": "Descrição do produto"
-        },
-        {
-            "imagem": "",
-            "titulo": "Título do produto",
-            "descricao": "Descrição do produto",
-            "id": 7
-        }
-    ]
+  "users": [
+    {
+      "email": "email@outlook.com",
+      "password": "senha1234",
+      "nome": "Usuário",
+      "id": 1
+    },
+    {
+      "email": "usuariodois@mail.com",
+      "password": "$2a$10$Z1MU5Q0NHHGaqhRGeGanmOvua6W03IDkiLbBnav1ziJ2z3CaOxKsG",
+      "nome": "Usuário",
+      "id": 2
+    },
+    {
+      "email": "usuarioum@mail.com",
+      "password": "$2a$10$3OgJLjrZEG08O.QSLe7OnOh3aSJBTSp/qv6d1POBuioySuumjKgD6",
+      "nome": "Usuário2",
+      "id": 3
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "imagem": "assets/img/controle.png",
+      "titulo": "Título do produto",
+      "descricao": "Descrição do produto"
+    },
+    {
+      "id": 2,
+      "imagem": "assets/img/headset.png",
+      "titulo": "Título do produto",
+      "descricao": "Descrição do produto"
+    },
+    {
+      "id": 3,
+      "imagem": "assets/img/notebook.png",
+      "titulo": "Título do produto",
+      "descricao": "Descrição do produto"
+    },
+    {
+      "id": 4,
+      "imagem": "",
+      "titulo": "Título do produto",
+      "descricao": "Descrição do produto"
+    },
+    {
+      "id": 5,
+      "imagem": "",
+      "titulo": "Título do produto",
+      "descricao": "Descrição do produto"
+    },
+    {
+      "id": 6,
+      "imagem": "",
+      "titulo": "Título do produto",
+      "descricao": "Descrição do produto"
+    },
+    {
+      "imagem": "",
+      "titulo": "Título do produto",
+      "descricao": "Descrição do produto",
+      "id": 7
+    }
+  ]
 }

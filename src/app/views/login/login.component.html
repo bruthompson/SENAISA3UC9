@@ -69,21 +69,21 @@
         </div>
 
         <main>
-            <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+            <form formGroup="loginForm" (ngSubmit)="submit()">
 
                 <div class="campo-label">
                     <label for="email">E-MAIL:</label>
-                    <input type="email" name="email" id="email" placeholder="Ex.: email@email.com" [(ngModel)]="loginModel.email">
+                    <input type="email" name="email" id="email" placeholder="Ex.: email@email.com" formControlName="email">
                 </div>
 
                 <div class="campo-label">
                     <label for="senha">SENHA:</label>
-                    <input type="password" name="password" id="senha" placeholder="Sua senha aqui." [(ngModel)]="loginModel.password">
+                    <input type="password" name="password" id="senha" placeholder="Sua senha aqui." formControlName="password">
                 </div>
-                <input id="botao-enviar" type="submit" value="Fazer Login">
+                <button type="submit" class="btn btn-secondary" [disabled]="!loginForm.valid">Entrar</button>
 
             </form>
-            <p id="mensagem" *ngIf="mensagem != ''">{{mensagem}}</p>
+
         </main>
 
         <footer>

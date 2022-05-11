@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { User } from 'src/app/models/user';
-import { LoginService } from 'src/app/services/login.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -10,22 +8,20 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService, private router: Router) { }
+  loginForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.loginForm = this.formBuilder.group({
+      email: ['email@email', [Validators.email, Validators.required]],
+      password: ['', [Validators.required, Validators.minLength(6)]]
+    })
+  }
 
   ngOnInit(): void {
   }
 
-  loginModel = new User();
-  mensagem = ""
-
-  onSubmit(){
-    console.log(this.loginModel)
-
-    this.loginService.login(this.loginModel).subscribe((response)=>{
-      this.router.navigateByUrl('')
-    }, (respostaErro) => {
-      this.mensagem = respostaErro.console.error;
-      console.log(this.mensagem)
-    })
-    }
+  submit(){
+    console.log(this.loginForm.getRawValue())
   }
+
+}
